@@ -6,7 +6,5 @@ CREATE TABLE ip(
     location varchar(32) NOT NULL DEFAULT '' COMMENT '',
     protocol varchar(5) NOT NULL DEFAULT 'HTTP',
     speed decimal(5,3) NOT NULL,
-    connect_time decimal(5,3) NOT NULL,
-    alive_time varchar(16) NOT NULL DEFAULT '',
-    validate_time varchar(32) NOT NULL DEFAULT ''
+    alive tinyint(1) not null defaul 1
 );
